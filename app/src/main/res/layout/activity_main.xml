@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:text="@string/travel_photo_app"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintBounds" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+
+        <ImageView
+            android:id="@+id/pic0"
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            app:srcCompat="@drawable/pic1"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic2"
+            tools:ignore="ContentDescription,MissingConstraints" />
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic3"
+            tools:ignore="ContentDescription,MissingConstraints" />
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic4"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/pic4"
+            android:layout_width="409dp"
+            android:layout_height="309dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic5"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnprev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_rew"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_ff"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TVname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="@string/tansen_ka_makbara"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

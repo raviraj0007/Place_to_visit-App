@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Travel photos app</string>
+    <string name="travel_photos_app">Travel Photos App</string>
+    <string name="place_name">place name</string>
+    <string name="textview">TextView</string>
+    <string name="travel_photo_app">Travel Photo App</string>
+    <string name="tansen_ka_makbara">Tansen ka Makbara</string>
+</resources>
